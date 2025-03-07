@@ -45,7 +45,7 @@ export default function Home() {
             <h1 className="text-white text-4xl font-bold">Cute Cat</h1>
             <p className="text-white text-2xl mb-4">Générer des photos de chat en cliquant sur un bouton.</p>
             {image &&  <img src={image} alt="cat" className="w-[500px] h-[500px] object-cover rounded-md" onLoad={() => setImageLoaded(true)} />}
-            {!imageLoaded && <p className="text-white text-2xl mt-4">Chargement...</p>}
+            {!imageLoaded && image && <p className="text-green-400 text-2xl mt-4">Chargement...</p>}
             <button className="bg-white text-black px-4 py-2 rounded-md mt-5 hover:bg-gray-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300" disabled={loading} onClick={generateImage}>Generate a cat 🐱</button>
           </div>
         </div>
