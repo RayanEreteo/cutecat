@@ -42,10 +42,10 @@ export default function Home() {
         <div className="">
           <div id="background" className="w-[100vw] h-[100%]  absolute -z-10 brightness-50" style={{ backgroundImage: `url(/background.jpg)` }}></div>
           <div id="main-content" className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-            <h1 className="text-white text-4xl font-bold">Cutecat</h1>
-            <p className="text-white text-2xl mb-4">Generate pictures of cute cat simply by clicking a button.</p>
+            <h1 className="text-white text-4xl font-bold">Cute Cat</h1>
+            <p className="text-white text-2xl mb-4">Générer des photos de chat en cliquant sur un bouton.</p>
             {image &&  <img src={image} alt="cat" className="w-[500px] h-[500px] object-cover rounded-md" onLoad={() => setImageLoaded(true)} />}
-            {!imageLoaded && <p className="text-white text-2xl mt-4">Loading...</p>}
+            {!imageLoaded && <p className="text-white text-2xl mt-4">Chargement...</p>}
             <button className="bg-white text-black px-4 py-2 rounded-md mt-5 hover:bg-gray-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300" disabled={loading} onClick={generateImage}>Generate a cat 🐱</button>
           </div>
         </div>
