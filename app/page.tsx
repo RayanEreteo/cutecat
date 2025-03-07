@@ -17,7 +17,6 @@ export default function Home() {
     const requestOptions: RequestInit = {
       method: 'GET',
       headers: headers,
-      redirect: 'follow'
     };
 
     try {
