@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="absolute top-[90vh] flex items-center justify-center w-[100vw] bg-red-500 h-[10vh] underline">
+      <footer className=" fixed bottom-0 flex items-center justify-center w-[100vw] bg-red-500 h-[10vh] underline">
         <a href="https://github.com/RayanEreteo/cutecat" target="_blank" className="underline text-white">Check the source code.</a>
       </footer>
     </>
