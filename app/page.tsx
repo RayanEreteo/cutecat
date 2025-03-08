@@ -11,7 +11,7 @@ export default function Home() {
     setLoading(true);
     const headers = new Headers({
       "Content-Type": "application/json",
-      "x-api-key": "live_YH5gqxK5gkD7nE7yc8ZlYuQDJ66CCLGCuEuo7u0FwZDsAmrIl95elBxjsviQNR9N"
+      "x-api-key": process.env.CAT_KEY!,
     });
 
     const requestOptions: RequestInit = {
