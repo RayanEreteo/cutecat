@@ -42,15 +42,15 @@ export default function Home() {
         <div className="">
           <div id="background" className="w-[100vw] h-[100%]  absolute -z-10 brightness-50" style={{ backgroundImage: `url(/background.jpg)` }}></div>
           <div id="main-content" className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-            <h1 className="text-white text-4xl font-bold">Cute Cat</h1>
-            <p className="text-white text-2xl mb-4">Générer des photos de chat en cliquant sur un bouton.</p>
+            <h1 className="text-white text-3xl lg:text-4xl font-bold">Cute Cat</h1>
+            <p className="text-white text-2xl text-center lg:text-2xl mb-4">Générer des photos de chat en cliquant sur un bouton.</p>
             {image &&  <img src={image} alt="cat" className="w-[500px] h-[500px] object-cover rounded-md" onLoad={() => setImageLoaded(true)} />}
             {!imageLoaded && image && <p className="text-green-400 text-2xl mt-4">Chargement...</p>}
             <button className="bg-white text-black px-4 py-2 rounded-md mt-5 hover:bg-gray-200 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300" disabled={loading} onClick={generateImage}>Générer un chat 🐱</button>
           </div>
         </div>
       </main>
-      <footer className=" fixed bottom-0 flex items-center justify-center w-[100vw] bg-red-500 h-[10vh] underline">
+      <footer className=" lg:fixed lg:bottom-0  flex items-center justify-center w-[100vw] bg-red-500 h-[10vh] underline">
         <a href="https://github.com/RayanEreteo/cutecat" target="_blank" className="underline text-white">Aller aux code source.</a>
       </footer>
     </>
